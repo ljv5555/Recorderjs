@@ -41,7 +41,7 @@
     __log('Input connected to audio context destination.');
     
     recorder = new Recorder(input);
-    window.r1=recorder;
+    console.log(recorder);
     __log('Recorder initialised.');
   }
 
@@ -50,6 +50,7 @@
     button.disabled = true;
     button.nextElementSibling.disabled = false;
     __log('Recording...');
+    console.log(recorder);
   }
 
   function stopRecording(button) {
