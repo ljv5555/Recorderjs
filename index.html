@@ -32,13 +32,13 @@
 
   var audio_context;
   var recorder;
-
+  
   function startUserMedia(stream) {
     var input = audio_context.createMediaStreamSource(stream);
     __log('Media stream created.');
     
-    input.connect(audio_context.destination);
-    __log('Input connected to audio context destination.');
+    //input.connect(audio_context.destination);
+    //__log('Input connected to audio context destination.');
     
     recorder = new Recorder(input);
     console.log(recorder);
